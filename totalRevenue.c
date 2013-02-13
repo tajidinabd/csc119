@@ -26,5 +26,6 @@ int main (void) //Declare the function will return integer value
 	printf("The total is: %.2f\n\n", sum); //Displays the calculated amonunt on the screen
 	
 	printf("Thank you.\n"); // Gives an ending greeting to user
+	getchar(); //Keeps window open
 	return 0; //returns a value to the OS upon completion
 } // main

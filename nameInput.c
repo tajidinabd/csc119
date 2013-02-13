@@ -10,13 +10,19 @@ afterwards should receive a greeting
 int main (void)  //Declare the function will return integer value
 {
 //Local Declarations
-char myName[35];  //Intializes the variable variable type and identifier
+char fname[30];  //Intializes the variable variable type and identifier
+char lname[30];  //Intializes the variable variable type and identifier
 
 //Statements
-	printf("Enter your name: "); //Outputs to screen to prompt user
-	scanf("%s",myName); //Reads user input data type is character
-	printf("Hello %s\n",myName); //Displays user input
-
+	printf("Enter your first name:\n"); //Outputs to screen to prompt user
+	scanf("%s", fname); //Reads user input data type is character
+	
+	printf("Enter your last name:\n"); //Outputs to screen to prompt user
+	scanf("%s", lname); //Reads user input data type is character
+	
+	printf("Guten Tag %s %s\n", fname, lname); //Displays user input
+	getchar(); //Keeps window open
+	
 	return 0; //returns a value to the OS upon completion
 	
 }	// main
