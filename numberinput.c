@@ -12,9 +12,9 @@ int main (void)
 	printf("Enter a character : ");
 	di = getchar();
 	if(isdigit(di))
-		printf("%c is a digit!", di);
+		printf("%d is a digit!", di);
 	else
-		printf("%c is not a digit!", di);
+		printf("%d is not a digit!", di);
 	getch();
 	return 0;
 }
