@@ -9,7 +9,7 @@ Feb 23 2013
 int main (void)
 {
 	char di;
-	printf("Enter a character : ");
+	printf("Enter your number :\n ");
 	di = getchar();
 	if(isdigit(di))
 		printf("%d is a digit!", di);
