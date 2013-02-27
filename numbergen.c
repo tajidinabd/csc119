@@ -16,8 +16,6 @@ int nrange;
 	nrange = (9 - 0) + 1;
 	
 	printf("%d",	rand() % nrange + 1);
-	printf(" %d",	rand() % nrange + 1);
-	printf(" %d\n",	rand() % nrange + 1);
 	
 	return 0;
 } //Main

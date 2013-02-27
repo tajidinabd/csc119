@@ -9,11 +9,22 @@ to pick the correct number otherwise the game will end and tell user to try agai
 #include <stdlib.h>
 #include <time.h>
 
+
 int main(void)
 {
-	int i;
-	srand((unsigned)time(NULL));
-	i = (rand() % 10 + 1);
+	int nrange;
+	int R_Eply = 0;
+	char cAnswer = '\0';
 	
+	srand(time(NULL));
+	nrange = (rand() % 10) + 1;
+
+	printf("\nChoose a number between 1 and 10: ");
+	scanf("%d", &R_Eply);
+{
+	if (R_Eply == nrange)
+		printf("\nYou responded correctly\n");
+	printf("%d",	rand() % nrange + 1);
 	
-	
+	return 0;
+} //Main

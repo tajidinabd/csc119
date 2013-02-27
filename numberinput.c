@@ -12,9 +12,9 @@ int main (void)
 	printf("Enter your number :\n ");
 	di = getchar();
 	if(isdigit(di))
-		printf("%d is a digit!", di);
+		printf("%d is a digit!\n", di);
 	else
-		printf("%d is not a digit!", di);
+		printf("%c is not a digit!", di);
 	getch();
 	return 0;
 }
