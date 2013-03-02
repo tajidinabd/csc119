@@ -10,10 +10,14 @@ and will also check to verify user input is a number.
 
 int main(void)
 {
-	int Hijri_number = 1;
+	int Hijri_number;
+	
 	printf("Please choose a number 1 thru 12:\n");
 	scanf("%d", &Hijri_number);
-	
+		
+		if (isdigit(Hijri_number)) {
+			printf("\nYou must input a digit\n");
+		}
 	switch (Hijri_number)
 	{
 	case 1: 
@@ -52,8 +56,6 @@ int main(void)
 	case 12: 
 			printf("The month is called Thw al-Hijjah\n");
             break;
-	default: printf("Invalid choice\n"); 
-			break;
 }
 return 0;
 }
