@@ -1,6 +1,7 @@
 /* Topic 5 Assignment 3 Number Game
 Derrick Williams
 CSC119003
+Rabi Al-Ahkhar 19, 1434 AH  (March 1, 2013 CE)
 This game will store a random number each time it starts between 1 and 10 and give the user 1 chance
 to pick the correct number otherwise the game will end and display the correct number
 */
@@ -9,14 +10,13 @@ to pick the correct number otherwise the game will end and display the correct n
 #include <stdlib.h>
 #include <time.h>
 
-// Global Declarations
 int main(void)
 {
-	// Local Declarations
+// Local Declarations
 	int nrange;
 	char R_eply;
 	
-	// Statements
+// Statements
 	srand(time(NULL));
 	nrange = (rand() % 10) + 1;
 
@@ -24,7 +24,7 @@ int main(void)
 	scanf("%c", &R_eply);
 		if (!isdigit(R_eply))  {
 			printf("\nYou must input a digit\n");
-		return 0;
+	return 0;
 		}
 		if ( (R_eply - '0') == nrange) {
 			printf("\nYou responded correctly\n");
@@ -35,5 +35,5 @@ int main(void)
    
 	
 	}
-return 0;
-} //Main
+	return 0;
+} //main

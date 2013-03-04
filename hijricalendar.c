@@ -1,4 +1,5 @@
-/* Derrick Williams
+/* Topic 5 Assignment 3 Hijri Calendar
+Derrick Williams
 CSC119003
 Rabi Al-Ahkhar 19, 1434 AH  (March 1, 2013 CE)
 This program will display the months for the Hijri Calendar which is a calendar used in 
@@ -10,8 +11,10 @@ and will also check to verify user input is a number.
 
 int main(void)
 {
-	int Hijri_number;
+// Local Declarations
+	int Hijri_number; 
 	
+//Statements
 	printf("Please choose a number 1 thru 12:\n");
 	scanf("%d", &Hijri_number);
 		
@@ -56,6 +59,6 @@ int main(void)
 	case 12: 
 			printf("The month is called Thw al-Hijjah\n");
             break;
-}
-return 0;
-}
+} // switch
+	return 0;
+} // main
