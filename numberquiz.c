@@ -14,4 +14,6 @@ int main()
 {
 	int wrong_Question, correct_Question, asked_Question;
 	int random_Question, asked_Questions, total_Question;
+	printf("\t\t===NumberQuiz===");
+	printf("\n\nEnter a number between 1-5 for the number of Questions");
 }
