@@ -31,9 +31,44 @@ int main()
 	random_Question = (rand() %5) +1;  // will generate random question from the 5 choices below in switch statement
 	
 	// Intialize all the variables to zero that will be used in the switch statement
-	wrong_Question = 0
-	correct_Question = 0
-	asked_Question = 0
-	answer_Question = 0
+	wrong_Question = correct_Question = asked_Question = answer_Question  = 0;
+	 
+	while (total_Question>asked_Question){
+		switch(random_Question) {
+			case 1:
+				printf("\n50 multiplied by 3 is:  ");
+				scanf("%d", &answer_Question);
+					if(answer_Question==150) {
+					printf("\n\t\tCorrect");
+					asked_Question++;
+					correct_Question++;
+					break;
+					}
+				
+					else {
+					printf("\n\t\tWrong");
+					asked_Question++;
+					wrong_Question++;
+					break;
+					}
+			case 2:
+				printf("\n1000 divided by 2 is:   ");
+				scanf("%d", &answer_Question);
+					if(answer_Question==500) {
+					printf("\n\t\tCorrect");
+					asked_Question++;
+					correct_Question++;
+					break;
+					}
+					else {
+					printf("\n\t\tWrong");
+					asked_Question++;
+					wrong_Question++;
+					break;
+					}
+		}
+	}
+			
+	
 	
 }
