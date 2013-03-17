@@ -16,7 +16,7 @@ int asked = 0;
 int answer;
 //Statements
 	printf("\t\t===NumberQuiz===");
-	printf("\n\n\tThe quiz has 5 very basic athrmetic.\n \tYou get +3 for each correct answer and -1 for each wrong answer.\n");
+	printf("\n\n\tThe quiz has 5 very basic athrmetic.\n \tYou get 3 points for each correct answer and are deducted 1 point for each wrong answer.\n");
 
 	printf("\n50 multiplied by 3 is:  ");
 	scanf("%d", &answer);
