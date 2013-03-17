@@ -1,7 +1,7 @@
 /* Assignment # 6 Arthmetic Quiz
 Derrick Williams (Abu Bakr)
 CSC119003
-Jumada Al-Awwal 1, 1434 AH  (March 13, 2013 CE
+Jumada Al-Awwal 1, 1434 AH  (March 13, 2013 CE)
 This program will test the users knowledge of 5 arthmetic questions.
 Will generate random questions for the user to answer
 Will tell user whether answer is correct or incorrect.
@@ -33,42 +33,93 @@ int main()
 	// Intialize all the variables to zero that will be used in the switch statement
 	wrong_Question = correct_Question = asked_Question = answer_Question  = 0;
 	 
-	while (total_Question>asked_Question){
+	while (total_Question < 5){
 		switch(random_Question) {
 			case 1:
 				printf("\n50 multiplied by 3 is:  ");
 				scanf("%d", &answer_Question);
-					if(answer_Question==150) {
+					if(answer_Question == 150) {
 					printf("\n\t\tCorrect");
 					asked_Question++;
 					correct_Question++;
 					break;
-					}
+					} // if
 				
-					else {
+					else 
 					printf("\n\t\tWrong");
 					asked_Question++;
 					wrong_Question++;
 					break;
-					}
+					 
 			case 2:
 				printf("\n1000 divided by 2 is:   ");
 				scanf("%d", &answer_Question);
-					if(answer_Question==500) {
+					if(answer_Question == 500) {
 					printf("\n\t\tCorrect");
 					asked_Question++;
 					correct_Question++;
 					break;
-					}
-					else {
+					} // if
+					else 
 					printf("\n\t\tWrong");
 					asked_Question++;
 					wrong_Question++;
 					break;
-					}
-		}
-	}
+					
+			case 3:
+				printf("\n400 minus 67 is:  ");
+				scanf("%d", &answer_Question);
+					if(answer_Question == 333) {
+					printf("\n\t\tCorrect");
+					asked_Question++;
+					correct_Question++;
+					break;
+					} // if
+					else 
+					printf("\n\t\tWrong");
+					asked_Question++;
+					wrong_Question++;
+					break;
+					
+			case 4:
+				printf("\n48 increased by 23 is:   ");
+				scanf("%d", &answer_Question);
+					if(answer_Question == 71) {
+					printf("\n\t\tCorrect");
+					asked_Question++;
+					correct_Question++;
+					break;
+					} //if
+					else 
+					printf("\n\t\tWrong");
+					asked_Question++;
+					wrong_Question++;
+					break;
+					
+			case 5:
+				printf("\n14 multiplied by 13 is:  ");
+			scanf("%d", &answer_Question);
+			if(answer_Question == 182) {
+				printf("\n\t\tCorrect");
+				asked_Question++;
+				correct_Question++;
+				break;
+			} //if
+			else {
+				printf("\n\t\tWrong");
+				asked_Question++;
+				wrong_Question++;
+				break;
+			}
+} //switch
+			if(asked_Question == correct_Question) {
+				printf("\n\t\tYou got them all correct.");
+				return 0;
+			} //if
+			  
+		
+	} //while
 			
+			printf("\tYou got %d correct and %d wrong  ", correct_Question, wrong_Question);
 	
-	
-}
+} //main
