@@ -1,8 +1,8 @@
-/* Assignment # 6 Arthmetic Quiz
+/* Assignment # 6 Arithmetic Quiz
 Derrick Williams (Abu Bakr)
 CSC119003
 Jumada Al-Awwal 5, 1434 AH  (March 17, 2013 CE)
-This program will test the users knowledge of 5 arthmetic questions.
+This program will test the users knowledge of 5 arithmetic questions.
 Will tell user whether answer is correct or incorrect.
 Will give a score at the end of the quiz
 */
