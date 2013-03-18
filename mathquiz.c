@@ -23,13 +23,13 @@ int answer;
 
 		if(answer == 150){
 			printf("\nCorrect\n");
-			asked++;
-			score+=3;
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score+=3; // increments the variable by 3 if correct
 		} //if
 		else{
 			printf("Wrong Answer\n");
-			asked++;
-			score--;
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score--; // decrements the variable by 1 if incorrect
 		}
 
     printf("\n1000 divided by 2 is:   ");
