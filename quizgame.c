@@ -13,6 +13,7 @@ void playquiz(void)
 {
 	printf("\tTake the Quiz");
 }
+void printResults()
 
 int main(void)
 {
@@ -31,11 +32,16 @@ int answer;
 	if (isdigit(input)) {
 		printf("\nYou must input a digit\n");
 	} //if
+	return 0;
+	} //main
 	
 	//Switch 
 	switch (input) {
 		case 1:            
-		playgame();
+		playgame()
+		{
+			
+		}
 		break;
 		case 2:        
             printf( "Thanks for playing!\n" );
@@ -46,5 +52,14 @@ int answer;
 	} //switch
 	getchar();
 	
+/*======================= Print Results ===============================
+Prints the final results for the quiz how many correct out of the number of questions
+	Pre	 keeps running score of the score and asked variables
+	Post displays the results
+*/
+void printResults()
+{
+	printf("\nYour Total Score is %d points out of %d questions.", score, asked);
+	return;
+} //printResults
 	
-} //main
