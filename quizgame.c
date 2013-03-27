@@ -8,58 +8,97 @@ also at the end of the quiz give user total score for the Quiz.
 */
 #include <stdio.h>
 #include <ctype.h>
+#include <conio.h>
 //User Defined Function
-void playquiz(void)
-{
-	printf("\tTake the Quiz");
-}
-void printResults()
 
 int main(void)
 {
 //Local Declarations
-int score[0] = {0}; 
-int asked[0] = {0};	
+int score = 0;
+int asked = 0;
 int input;
 int answer;
-	
 	//Statements
-	printf( "\t1. Play game!!\n" );
-	printf( "\t2. Exit\n" );
-	printf( "\tSelection: \n" );
+	printf( "\t1. Math Teaser 1 \n" );
+	printf( "\t2. Math Teaser 2 \n" );
+	printf( "\t3. Math Teaser 3 \n" );
+	printf( "\t4. Math Teaser 4 \n" );
     scanf( "%d", &input );
 	
 	if (isdigit(input)) {
 		printf("\nYou must input a digit\n");
 	} //if
-	return 0;
-	} //main
 	
-	//Switch 
-	switch (input) {
-		case 1:            
-		playgame()
-		{
-			
+	switch(input) {
+	case 1:
+		printf("\n50 multiplied by 3 is:  ");
+		scanf("%d", &answer);
+		
+		if(answer == 150){
+			printf("\nCorrect\n");
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score+=3; // increments the variable by 3 if correct
+		} //if
+		else{
+			printf("Wrong Answer\n");
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score--; // decrements the variable by 1 if incorrect
 		}
 		break;
-		case 2:        
-            printf( "Thanks for playing!\n" );
-            break;
-        default:            
-            printf( "Bad input, quitting!\n" );
-            break;
-	} //switch
-	getchar();
 	
-/*======================= Print Results ===============================
-Prints the final results for the quiz how many correct out of the number of questions
-	Pre	 keeps running score of the score and asked variables
-	Post displays the results
-*/
-void printResults()
-{
-	printf("\nYour Total Score is %d points out of %d questions.", score, asked);
-	return;
-} //printResults
+	case 2:
+		printf("\n1000 divided by 2 is:   ");
+		scanf("%d", &answer);
+		
+		if(answer == 500){
+			printf("\nCorrect\n");
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score+=3; // increments the variable by 3 if correct
+		} //if
+		else{
+			printf("Wrong Answer\n");
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score--; // decrements the variable by 1 if incorrect
+		}
+		break;
 	
+	case 3:
+		printf("\n400 minus 67 is:  ");
+		scanf("%d", &answer);
+		
+		if(answer == 333){
+			printf("\nCorrect\n");
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score+=3; // increments the variable by 3 if correct
+		} //if
+		else{
+			printf("Wrong Answer\n");
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score--; // decrements the variable by 1 if correct
+		}
+		break;
+		
+	case 4:
+		printf("\n48 increased by 23 is:   ");
+		scanf("%d", &answer);
+		if(answer == 71){
+			printf("\nCorrect\n");
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score+=3; // increments the variable by 3 if correct
+		} //if
+		else{
+			printf("Wrong Answer\n");
+			asked++; // increments the variable by 1 this keeps track of questions asked
+			score--; // increments the variable by 3 if correct
+		}
+		break;
+	
+	default:            
+		printf( "Bad input, quitting!\n" );
+		break;
+	}
+	
+	printf("\nYour Total Score is %d points out of %d question.", score, asked);
+	
+	return 0;
+}
