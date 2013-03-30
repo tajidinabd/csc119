@@ -29,7 +29,7 @@ int answer;
 		else{
 			printf("Wrong Answer\n");
 			asked++; // increments the variable by 1 this keeps track of questions asked
-			score--; // increments the variable by 3 if correct
+			score--; // decrements the variable by 1 if incorrect
 		}
 
     printf("\n1000 divided by 2 is:   ");
@@ -43,7 +43,7 @@ int answer;
 		else{
 			printf("Wrong Answer\n");
 			asked++; // increments the variable by 1 this keeps track of questions asked
-			score--; // increments the variable by 3 if correct
+			score--; // decrements the variable by 1 if incorrect
 		}
 
     printf("\n400 minus 67 is:  ");
@@ -57,7 +57,7 @@ int answer;
 		else{
 			printf("Wrong Answer\n");
 			asked++; // increments the variable by 1 this keeps track of questions asked
-			score--; // increments the variable by 3 if correct
+			score--; // decrements the variable by 1 if incorrect
 		}
 
 	printf("\n48 increased by 23 is:   ");
@@ -71,7 +71,7 @@ int answer;
 		else{
 			printf("Wrong Answer\n");
 			asked++; // increments the variable by 1 this keeps track of questions asked
-			score--; // increments the variable by 3 if correct
+			score--; // decrements the variable by 1 if incorrect
 		}
 
     printf("\n14 multiplied by 13 is:  ");
@@ -85,7 +85,7 @@ int answer;
 		else{
 			printf("Wrong Answer\n");
 			asked++; // increments the variable by 1 this keeps track of questions asked
-			score--; // increments the variable by 3 if correct
+			score--; // decrements the variable by 1 if incorrect
 		}
 
     printf("\nYour Total Score is %d points out of %d questions.", score, asked);

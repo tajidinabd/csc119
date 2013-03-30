@@ -10,6 +10,9 @@ also at the end of the quiz give user total score for the Quiz.
 #include <ctype.h>
 #include <conio.h>
 //User Defined Function
+void quiz();
+void menu();
+
 
 int main(void)
 {
