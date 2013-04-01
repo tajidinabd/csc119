@@ -2,8 +2,8 @@
 Derrick Williams 
 CSC119003
 Jumada Al-Awwal 17, 1434 AH  (March 29, 2013 CE)
-This Quiz Game will give user choice of three categories to choose from 
-also will notify user whether answer is correct or incorrect 
+This Quiz Game will give user choice of two categories to choose from 
+Also will notify user whether answer is correct or incorrect 
 also at the end of the quiz give user total score for the Quiz.
 */
 #include <stdio.h>
@@ -16,6 +16,7 @@ void menu(void);
 
 int main(void)
 {
+	// Statements
     printf("\tWelcome to the Quiz.\n");
     printf("\tPress any key to continue\n");
     getchar();
@@ -24,7 +25,10 @@ int main(void)
     return 0;
 
 }
-void menu()
+/* Menu function
+
+*/
+void menu(void)
 {
 	int pickMenu;
 	
