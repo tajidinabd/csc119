@@ -26,20 +26,23 @@ int main(void)
 
 } //main
 /* Menu function
-
+Gives Options for Menu whether to Start the Quiz or Exit the Quiz
+waits for digit input to decide what to do. 
 */
 void menu(void)
 {
+	// Local Definitions
 	int pickMenu;
 	
 	do
 	{
+		// Statements
 		printf( "\tQuiz Menu\n" );
 		printf("\t1) Quiz\n");
 		printf("\t2) Exit\n");
 		scanf("%d", &pickMenu);
 		
-// Switch		
+		// Switch		
 		switch(pickMenu)
 		{
 			case 1: quiz();
@@ -55,10 +58,11 @@ void menu(void)
 
 void quiz(void)
 {
+	// Local Definitions
 	int score = 0;
 	int asked = 0;
 	int answer;
-	
+		// Statements
 		printf("\n\n\tThe quiz has 5 very basic arithmetic problems.\n\tYou get 3 points \n\tfor each correct answer and are deducted 1 point for each wrong answer.\n");
 	
 			printf("\n50 multiplied by 3 is:  ");
