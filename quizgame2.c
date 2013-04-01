@@ -24,7 +24,7 @@ int main(void)
 
     return 0;
 
-}
+} //main
 /* Menu function
 
 */
@@ -39,6 +39,7 @@ void menu(void)
 		printf("\t2) Exit\n");
 		scanf("%d", &pickMenu);
 		
+// Switch		
 		switch(pickMenu)
 		{
 			case 1: quiz();
@@ -48,9 +49,9 @@ void menu(void)
 				break;
 			default: printf("Wrong choice\n");
 				break;
-		}
+		} // switch
 	} while (pickMenu != 2);
-}
+} // menu function
 
 void quiz(void)
 {
@@ -131,4 +132,4 @@ void quiz(void)
 			
 	printf("\nYour Total Score is %d points out of %d question.", score, asked);
 			exit(1);
-}
+} // quiz function
