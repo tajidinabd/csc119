@@ -59,7 +59,7 @@ void countUp(void)
 int a[10],i,j,t;
 
 	//Statements
-	printf("Enter 10 numbers\n\n");
+	printf("Enter 10 numbers:\n\n");
 	for (i=0;i<10;i++)
 	scanf("%d",&a[i]);
 	for (i=0;i<10;i++)
@@ -87,7 +87,7 @@ void countDown(void)
 int a[10],i,j,t;
 	
 		// Statements
-		printf("Enter 10 nos.\n\n");
+		printf("Enter 10 numbers:\n\n");
 		for(i=0;i<10;i++)
 		scanf("%d",&a[i]);
 		for(i=0;i<9;i++)
@@ -102,7 +102,7 @@ int a[10],i,j,t;
 		}
 	}
 }
-			printf("\nDescending Order is :\n");
+			printf("\nDescending Order is:\n");
 			for(i=0;i<10;i++)
 			printf("\n%d ",a[i]) ;
 return;
