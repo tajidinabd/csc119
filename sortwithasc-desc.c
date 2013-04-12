@@ -1,13 +1,12 @@
 /* Assignment # 8 Print Numbers in Ascending/Descending Order
-Derrick Williams 
+Derrick "Abu Bakr" Williams 
 CSC119003
 Jumada Al-Thani 1, 1434 AH  (April 12, 2013 CE)
 The Program will give the user prompt to enter 10 numbers. Afterwards will have a menu 
-to print the numbers in ascending or descending order. 
+whether to print the numbers in ascending or descending order. 
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <conio.h>
 
 // User Defined Function
@@ -19,7 +18,7 @@ int main(void)
 {
  // Statements
     printf("\tWelcome to the Program.\n");
-    printf("\tPress any key to continue\n");
+    printf("\tPress <ENTER> to continue\n");
     getchar();
     menu();
 
@@ -48,7 +47,7 @@ void menu(void)
 				break;
 			default: printf("Please choose option 1 or 2\n");
 				break;
-			return menu();
+			return;
 		} // end of switch
 		
 	}
@@ -75,10 +74,10 @@ int a[10],i,j,t;
 	}
 	}
 	}
-	printf("Ascending Order is:");
-	for(j=0;j<10;j++)
-	printf("\n%d",a[j]);
-exit (1);
+			printf("Ascending Order is:");
+			for(j=0;j<10;j++)
+			printf("\n%d",a[j]);
+return;
 }
 /*=================== countDown Function ========================
 This function will sort and print the numbers in descending order
@@ -106,5 +105,5 @@ int a[10],i,j,t;
 			printf("\nDescending Order is :\n");
 			for(i=0;i<10;i++)
 			printf("\n%d ",a[i]) ;
-exit (1);
+return;
 }
