@@ -2,8 +2,9 @@
 Derrick "Abu Bakr" Williams 
 CSC119003
 Jumada Al-Thani 1, 1434 AH  (April 12, 2013 CE)
-The Program will give the user prompt to enter 10 numbers. Afterwards will have a menu 
-whether to print the numbers in ascending or descending order. 
+The Program will have a menu whether to print the numbers in ascending or descending order.
+The Program will give the user prompt to enter 10 numbers afterwards will print the 
+numbers accordingly.
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -27,7 +28,7 @@ int main(void)
 /*=============== Menu Function =======================
 This will use the above User Defined Functions and also declare
 the local variables and the single dimension array to be used
-*/
+=======================================================*/
 void menu(void)
 	{
 	int pickMenu;
@@ -53,18 +54,18 @@ void menu(void)
 	}
 /*================= countUp Function =======================
 This function will sort and print the numbers in ascending order
-*/
+============================================================*/
 void countUp(void)
 {
 int a[10],i,j,t;
 
 	//Statements
 	printf("Enter 10 numbers:\n\n");
-	for (i=0;i<10;i++)
+	for (i = 0; i < 10; i++)
 	scanf("%d",&a[i]);
-	for (i=0;i<10;i++)
+	for (i = 0; i < 10; i++)
 	{
-	for(j=i+1;j<10;j++)
+	for(j = i+1; j < 10; j++)
 	{
 		if(a[i]>a[j])
 	{
@@ -75,24 +76,24 @@ int a[10],i,j,t;
 	}
 	}
 			printf("Ascending Order is:");
-			for(j=0;j<10;j++)
+			for(j = 0; j < 10; j++)
 			printf("\n%d",a[j]);
 return;
 }
 /*=================== countDown Function ========================
 This function will sort and print the numbers in descending order
-*/
+=================================================================*/
 void countDown(void)
 {
 int a[10],i,j,t;
 	
 		// Statements
 		printf("Enter 10 numbers:\n\n");
-		for(i=0;i<10;i++)
-		scanf("%d",&a[i]);
-		for(i=0;i<9;i++)
+		for(i = 0; i < 10; i++)
+		scanf("%d", &a[i]);
+		for(i = 0; i < 9; i++)
 	{
-			for(j=i+1;j<10;j++)
+			for(j = i+1; j < 10; j++)
 	{
 			if(a[i]<a[j])
 		{
@@ -103,7 +104,7 @@ int a[10],i,j,t;
 	}
 }
 			printf("\nDescending Order is:\n");
-			for(i=0;i<10;i++)
+			for(i = 0; i < 10; i++)
 			printf("\n%d ",a[i]) ;
 return;
 }
