@@ -1,14 +1,12 @@
 /* Assignment # 8 Print Numbers in Ascending/Descending Order
 Derrick "Abu Bakr" Williams 
 CSC119003
-Jumada Al-Thani 1, 1434 AH  (April 12, 2013 CE)
+Jumada Al-Thani 6, 1434 AH  (April 17, 2013 CE)
 The Program will have a menu whether to print the numbers in ascending or descending order.
 The Program will give the user prompt to enter 10 numbers afterwards will print the 
 numbers accordingly.
 */
 #include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
 
 // User Defined Function
 void menu(void);
